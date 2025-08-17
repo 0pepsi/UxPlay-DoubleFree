@@ -3,13 +3,14 @@
 **UxPlay Double Free Vulnerability**
 
 Project: UxPlay
+
 Version Affected: 1.72 (Snap-distributed binary)
+
 Reported: 2025-08-17
-**Vulnerability Type: Double Free / Memory Corruption**
+
+Vulnerability Type: **Double Free / Memory Corruption**
 
 ## Description
-Vulnerability Description
-
 UxPlay 1.72, an open-source AirPlay mirroring server, contains a double free vulnerability in its RTSP request handling. A specially crafted RTSP TEARDOWN request can trigger multiple calls to free() on the same memory address, potentially causing:
 
 - Application crash (denial of service)
